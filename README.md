@@ -1,2 +1,2 @@
 # heropage
-https://mamondots.github.io/heropage/
+https://mamondots.github.io/heropages/
