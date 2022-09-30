@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    position: relative;
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+    background-image:linear-gradient(40deg, rgb(50,47,47), rgb(122,55,55)20%, rgb(50,47,47));
+}
+header{
+    position: relative;
+    width:100%;
+    padding:30px 0;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.logo a{
+    font-size:20px;
+    font-weight:600;
+    color:#fff;
+    text-decoration:none;
+    text-transform: capitalize;
+}
+.menu ul{
+    position: relative;
+    display:flex;
+}
+.menu ul li{
+    list-style:none;
+}
+.menu ul li a{
+    text-decoration:none;
+    font-size:16px;
+    font-weight:500;
+    color:#fff;
+    text-transform:capitalize;
+    margin:0 25px;
+    cursor: pointer;
+    transition:0.5s;
+    opacity:0.5;
+    position: relative;
+}
+.menu ul li a:hover{
+    opacity:1;
+}
+.menu ul li a::before{
+    position: absolute;
+    content:"";
+    bottom:0px;
+    left:35%;
+    width:30%;
+    height:2px;
+    background-color:#fff;
+    transform:translateY(0px);
+    opacity:0;
+    transition:0.5s; 
+}
+.menu ul li a:hover::before{
+    transform:translateY(8px);
+    opacity:1;
+}
+.btns button{
+    position: relative;
+    font-size:16px;
+    font-weight:500;
+    text-transform: capitalize;
+    color:#fff;
+    background-color:transparent;
+    outline:none;
+    border:none;
+    margin:0 12px;
+    transition:0.5s;
+}
+.btns button:hover{
+    color: rgb(248, 82, 32);
+}
+.btns .btn-02{
+    padding:12px 35px;
+    background-color: rgb(248, 82, 32);
+    border-radius:8px;
+    border:1px solid rgb(248, 82, 32);
+    cursor: pointer;
+    transition:0.5s;
+}
+.btns .btn-02:hover{
+    background-color:transparent;
+}
+.content{
+    position: relative;
+    padding:40px 100px;
+    top:25px;
+}
+.content .title{
+    font-size:16px;
+    font-weight:500;
+    text-transform: capitalize;
+    color:#fff;
+    letter-spacing:2px;
+}
+.content h1{
+    font-size:2.5rem;
+    font-weight:600;
+    color:#fff;
+    text-transform: capitalize;
+    padding:12px 0;
+    line-height:1.5;
+}
+.content .check{
+    position: relative;
+    display:flex;
+    padding:12px 0;
+    left:-12px;
+    cursor: pointer;
+}
+.content .check p{
+    font-size:14px;
+    color:#fff;
+    margin:0 12px;
+    transition:0.5s;
+}
+.content .check p i{
+    padding:6px 8px;
+    background-color:rgb(248, 82, 32);
+    color:#fff;
+    border-radius:4px;
+    margin:0 4px;
+
+}
+.content .check p:nth-child(2) i{
+    background-color:rgb(255,0,183);
+}
+.content form{
+    position: relative;
+    top:25px;
+}
+.email-box{
+    position: relative;
+}
+.email-box input{
+    width:340px;
+    height:55px;
+    background-color:rgba(0,0,0,0.36);
+    font-size:16px;
+    color:#fff;
+    border:none;
+    outline:none;
+    border-radius:8px;
+    padding:0 16px;
+}
+.email-box input::placeholder{
+    font-size:16px;
+    color:#999;
+}
+.email-box i{
+    position: absolute;
+    top:3px;
+    left:22.5%;
+    width:70px;
+    height:48px;
+    background-color:rgb(248, 82, 32);
+    color:#fff;
+    font-size:16px;
+    text-align:center;
+    line-height:48px;
+    border-radius:8px;
+    cursor: pointer;
+    transition:0.5s;
+}
+.email-box i:hover{
+    background-color:rgb(244, 67, 12);
+}
+.img-box{
+    position: absolute;
+    width:600px;
+    height:500px;
+    right:20vh;
+    top:-12vh;
+    pointer-events:none;
+    
+}
+.img-box img{
+    width:100%;
+    animation: animated 35s linear infinite;
+}
+@keyframes animated{
+    0%{
+        transform:rotate(360deg);
+    }
+    50%{
+        transform:rotate(-360deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
